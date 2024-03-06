@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    max-width: 80px;
+    
+}
+
+.logo a {
+    text-decoration: none;
+    font-weight: 400px;
+    
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+ list-style: none;
+
+}
+
+header ul li a {
+    display: inline-block;
+    font-weight: 200px;
+    margin-left: 40px;
+    text-decoration: none;
+    color:white;
+}
+
+
+
+.Content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:45px;
+}
+
+.Content .text{
+    position: relative;
+    max-width: 600px;
+}
+
+.Content .text h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.Content .text h1 .memo{
+    color: #ffd103 !important;
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+.Content .button{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ffd103;
+    color: white;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.Content .memo
+{
+    color: #ffd103 !important;
+}
+
+.imgbox{
+    position: relative;
+    justify-content: flex-end;
+}
+
+.imgbox ::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index:-1;
+}
