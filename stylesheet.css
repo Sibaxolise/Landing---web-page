@@ -33,13 +33,14 @@ header{
 
 header .logo{
     position: relative;
-    max-width: 80px;
+    max-width: 300px;
     
 }
 
 .logo a {
     text-decoration: none;
     font-weight: 400px;
+    color:whitesmoke;
     
 }
 
@@ -114,4 +115,19 @@ header ul li a {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     z-index:-1;
+}
+
+.heading h2{
+    margin-top: -90rem;
+    position: relative;
+    color: white;
+    margin-left: 40rem;
+}
+
+ .Menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+
 }
