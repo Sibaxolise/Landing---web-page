@@ -106,8 +106,8 @@ html::-webkit-scrollbar-thumb{
 .home .homeContent .imgbox{
     position: relative;
     justify-content: flex-end;
-    margin-left: 80rem;
-    margin-top: -40rem;
+    margin-left: 60rem;
+    margin-top: -47rem;
 }
 
 .imgbox ::before {
