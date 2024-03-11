@@ -187,15 +187,12 @@ section{
     width: 4rem;
     line-height: 4rem;
     font-size: 2rem;
-    color: var(--white);
-    background: var(--black);
     margin: 0 .3rem;
     border-radius: 50%;
 
 }
 .footer .share a:hover{
-    background: var(--white);
-    color: var(--black);
+    background: white;
 }
 .footer .credit{
     font-size: 2rem;
@@ -229,7 +226,6 @@ section{
         top: 100%;
         right: -100%;
         width: 25rem;
-        background-color: var(--white);
         height: 80vh;
     }
     .header .navbar.active{
