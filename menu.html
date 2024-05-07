@@ -165,13 +165,6 @@
         document.getElementById("signupModal").style.display = "none";
     }
 
-    // Close sign-up modal when clicked outside the modal
-    window.onclick = function (event) {
-        if (event.target == document.getElementById("signupModal")) {
-            document.getElementById("signupModal").style.display = "none";
-        }
-    }
-
     // Function to handle sign-up form submission
     document.getElementById("signupForm").onsubmit = function () {
         // Set a flag in localStorage indicating that the user has signed up
@@ -181,6 +174,13 @@
         // Prevent form submission (if you're not actually submitting the form to a server)
         return false;
     }
+
+    // Prevent closing sign-up modal when clicked outside the modal
+    document.getElementById("signupModal").addEventListener("click", function(event) {
+        if (event.target === document.getElementById("signupModal")) {
+            return false; // Prevents the event from propagating further
+        }
+    });
 
 
 </script>
