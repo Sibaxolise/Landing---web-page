@@ -120,7 +120,18 @@
     </div>
 </section>
 
-
+  <!-- sign up modal -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up for Our Newsletter</h2>
+        <form id="signupForm" action="#" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
 
 <!-- footer  -->
 
@@ -137,4 +148,43 @@
         created by <span>Sibaxolise</span> |all rights reserved ! 
     </div>
 </footer>
+
+<script>
+ 
+
+    // Function to show sign-up modal
+    function showSignupModal() {
+        document.getElementById("signupModal").style.display = "block";
+    }
+
+    // Show sign-up modal after 3 seconds
+    setTimeout(showSignupModal, 3000);
+
+    // Close sign-up modal when close button is clicked
+    document.getElementsByClassName("close")[0].onclick = function () {
+        document.getElementById("signupModal").style.display = "none";
+    }
+
+    // Close sign-up modal when clicked outside the modal
+    window.onclick = function (event) {
+        if (event.target == document.getElementById("signupModal")) {
+            document.getElementById("signupModal").style.display = "none";
+        }
+    }
+
+    // Function to handle sign-up form submission
+    document.getElementById("signupForm").onsubmit = function () {
+        // Set a flag in localStorage indicating that the user has signed up
+        localStorage.setItem('signedUp', 'true');
+        // Hide the sign-up modal
+        document.getElementById("signupModal").style.display = "none";
+        // Prevent form submission (if you're not actually submitting the form to a server)
+        return false;
+    }
+
+
+</script>
+
+</body>
+</html>
 
